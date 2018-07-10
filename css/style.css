@@ -1,0 +1,32 @@
+.box{
+    width: 400px;
+    height: 400px;
+    margin:50px auto;
+    text-align: center;
+}
+.box>div{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: #fda501;
+    border-radius: 10px;
+}
+#start,#end{
+    display: block;
+    width: 320px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border: 1px solid #fda501;
+    color:#fda501;
+    border-radius: 20px;
+}
+#start:hover,#end:hover{
+    background-color: #fda501;
+    color: #fff;
+}
