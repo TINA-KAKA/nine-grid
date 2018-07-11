@@ -1,4 +1,7 @@
 window.onload=function () {
+    var start=document.getElementById("start");
+    var end=document.getElementById("end");
+    var timer;
     function randomColor() {
         var r=Math.floor(Math.random()*256);
         var g=Math.floor(Math.random()*256);
@@ -50,13 +53,14 @@ window.onload=function () {
             }
 
 
-    var start=document.getElementById("start");
-    var end=document.getElementById("end");
+
 
     start.onclick=function () {
+        clearInterval(timer);
        sta();
     }
     end.onclick=function () {
+        clearInterval(timer);
         init();
     }
 
@@ -74,8 +78,8 @@ window.onload=function () {
         bb[8].style.backgroundColor="#fda501";
 
     }
-function sta() {
-    var timer=setInterval(function () {
+    function sta() {
+        timer=setInterval(function () {
         init();
         randomDiv();
     },1000)
